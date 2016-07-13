@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          GisMeteo_face_mod
 // @namespace     https://greasyfork.org
-// @description	  Модификация вида сайта GisMeteo.
+// @description	  РњРѕРґРёС„РёРєР°С†РёСЏ РІРёРґР° СЃР°Р№С‚Р° GisMeteo.
 // @author        ALeXkRU
 // @license       CC BY-SA
 // @homepage      https://greasyfork.org/ru/scripts/11538-gismeteo-face-mod
@@ -16,17 +16,17 @@
     (function() {var css = "";
 		css += ["@namespace url(http://www.w3.org/1999/xhtml);",
 				"",
-				"/* модификация вида */"
+				"/* РјРѕРґРёС„РёРєР°С†РёСЏ РІРёРґР° */"
 		].join("\n");
 		if (false || (document.domain == "gismeteo.ru" || document.domain.substring(document.domain.indexOf(".gismeteo.ru") + 1) == "gismeteo.ru") || (document.domain == "gismeteo.ua" || document.domain.substring(document.domain.indexOf(".gismeteo.ua") + 1) == "gismeteo.ua") || (document.domain == "gismeteo.com" || document.domain.substring(document.domain.indexOf(".gismeteo.com") + 1) == "gismeteo.com")) 
 			css += [
-		 // !! правка структуры from Ru-Board
+		 // !! РїСЂР°РІРєР° СЃС‚СЂСѓРєС‚СѓСЂС‹ from Ru-Board
 				" #canvas,.cleft{width: 988px!important;}#weather-maps,#map-view,#weather-old,#weather-busy{width: 986px!important;}#weather-cities,#weather-weekly,#weather-daily,#weather-hourly,#geomagnetic{width:738px!important;}#weather-news{width:362px!important;}.wtab{width:228px!important;}.wtabs .wttr{left:224px!important;}.wbfull tbody th{width:85px!important;}.wdata thead th,.wdata tbody th{text-align: center!important;}.workday,tbody tr .weekend{width: 40px!important;}.wbshort .wbday{left:450px!important;}.wbshort .wbnight{left:70px!important;}.rframe{background-color: rgba(255,255,255,0.4)!important;}.wsection, .wbshort, .wbfull, .rfc{background:transparent!important;}.wbshort:hover{background-color:rgb(255,255,225)!important;}body,.content{background:url(http://www.refropkb.ru/Images/685414393.jpg)!important;background-attachment: fixed!important;}#weather-maps .fcontent{height:280px!important;}#weather-maps li{width:108px!important;} .wsection table{width: 690px!important;}",
 				" .soft-promo, #soft-promo{display:none !important;}",
-		// !!?		" #graph{float:none !important;}", //проверить
+		// !!?		" #graph{float:none !important;}", //РїСЂРѕРІРµСЂРёС‚СЊ
 				" div#post-container,div#pre-container,.soft-promo{background:url(\"\")!important;}",
 				" td.content.editor{background:url(\"\")!important;} ",
-		// !! оставим меню: снежинки вырезать, на бету сходить
+		// !! РѕСЃС‚Р°РІРёРј РјРµРЅСЋ: СЃРЅРµР¶РёРЅРєРё РІС‹СЂРµР·Р°С‚СЊ, РЅР° Р±РµС‚Сѓ СЃС…РѕРґРёС‚СЊ
 				" #header, #header .fcontent{height:26px !important;}",
 				" #menu{top:0px !important;}",
 				" li#tourism_button{display:none !important;}"
